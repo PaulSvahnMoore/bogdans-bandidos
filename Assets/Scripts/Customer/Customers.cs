@@ -10,17 +10,14 @@ public enum GameDifficulty
 
 public class Customers : MonoBehaviour
 {
-    public float gameDuration { private get; set; }
+    public float gameDuration { private get; set; } // to set game duration from game manager or some sort
     public GameDifficulty gameDifficulty { get; private set; }
-
-    [SerializeField] private List<Customer> _customers;
-
     
     private float _timer;
     
     void Start()
     {
-        if (gameDuration == 0) { gameDuration = 60f; }
+        if (gameDuration == 0) { gameDuration = 10f; }
     }
 
     // Update is called once per frame
