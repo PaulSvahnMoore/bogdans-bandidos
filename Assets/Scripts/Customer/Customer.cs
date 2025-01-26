@@ -6,6 +6,9 @@ using Random = UnityEngine.Random;
 
 public class Customer : MonoBehaviour
 {
+    // a positive int is a valid beer ID; a negative int means an invalid beer ID and the customer is inactive
+    public int currentBeerId { get; private set; }
+
     [SerializeField] private Transform _customerTransform;
     [SerializeField] private GameObject _speechBubble;
     [SerializeField] private Customers _customersController;
@@ -85,13 +88,18 @@ public class Customer : MonoBehaviour
     private void HideCustomer()
     {
         _customerTransform.eulerAngles += new Vector3(0f, 0f, 90f);
+        RemoveBeerType();
     }
 
     private void GetRandomBeerType()
     {
-        int randomBeerIndex = Random.Range(0, _beerTypes.Count);
-        Debug.Log("randomBeerIndex: " + randomBeerIndex);
-        _speechBubbleMeshRenderer.material = _beerTypes[randomBeerIndex];
+        currentBeerId = Random.Range(0, _beerTypes.Count);
+        _speechBubbleMeshRenderer.material = _beerTypes[currentBeerId];
+    }
+
+    private void RemoveBeerType()
+    {
+        currentBeerId = -1;
     }
 
 }
