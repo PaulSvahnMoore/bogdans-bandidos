@@ -1,8 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using DG.Tweening;
 
 public class Customer : MonoBehaviour
 {
@@ -82,13 +82,13 @@ public class Customer : MonoBehaviour
     private void ShowCustomer()
     {
         GetRandomBeerType();
-        _customerTransform.eulerAngles -= new Vector3(0f, 0f, 90f);
+        StartCoroutine(AnimateCustomerAppearance());
     }
 
     private void HideCustomer()
     {
-        _customerTransform.eulerAngles += new Vector3(0f, 0f, 90f);
         RemoveBeerType();
+        StartCoroutine(AnimateCustomerDisappearance());
     }
 
     private void GetRandomBeerType()
@@ -100,6 +100,21 @@ public class Customer : MonoBehaviour
     private void RemoveBeerType()
     {
         currentBeerId = -1;
+    }
+
+    private IEnumerator AnimateCustomerAppearance()
+    {
+        yield return _customerTransform.DORotate(new Vector3(0f, 0f, -90f), 1f, RotateMode.LocalAxisAdd)
+            .SetEase(Ease.InOutQuad).WaitForCompletion();
+        yield return _customerTransform.DOShakePosition(0.3f, 0.2f, 20).WaitForCompletion();
+        yield break;
+    }
+
+    private IEnumerator AnimateCustomerDisappearance()
+    {
+        yield return _customerTransform.DORotate(new Vector3(0f, 0f, 90f), 1f, RotateMode.LocalAxisAdd)
+            .SetEase(Ease.InOutQuad).WaitForCompletion();
+        yield break;
     }
 
 }
