@@ -47,6 +47,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184ffe5480b724b7e9b3a9822306dfe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  beerTypes:
+  - {fileID: 2100000, guid: 6eebd3ee2e57048939b701729abdfcae, type: 2}
+  - {fileID: 2100000, guid: 09f529a664fe444cb818401735e5b545, type: 2}
+  - {fileID: 2100000, guid: f6f937c6bbc3c4c6ea02c1657b096e8a, type: 2}
 --- !u!1001 &101709031166456027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101,7 +105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _inactiveDuration
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _customerTransform
@@ -109,11 +113,11 @@ PrefabInstance:
       objectReference: {fileID: 3456749010015969690}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _activeDurationEasy
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _activeDurationHard
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: customersController
@@ -125,7 +129,7 @@ PrefabInstance:
       objectReference: {fileID: 3433051391027176647}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _activeDurationMedium
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -191,7 +195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _inactiveDuration
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _customerTransform
@@ -199,7 +203,7 @@ PrefabInstance:
       objectReference: {fileID: 8512209366370820519}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _activeDurationEasy
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _activeDurationHard
@@ -281,7 +285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _inactiveDuration
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _customerTransform
@@ -289,11 +293,11 @@ PrefabInstance:
       objectReference: {fileID: 4673931634817628187}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _activeDurationEasy
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _activeDurationHard
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: customersController
@@ -305,7 +309,7 @@ PrefabInstance:
       objectReference: {fileID: 3433051391027176647}
     - target: {fileID: 6239367117371341215, guid: 177e354fe55794ef2b5ced51c45cf126, type: 3}
       propertyPath: _activeDurationMedium
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

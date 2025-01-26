@@ -275,7 +275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a6c7bca38fa74eb18d30cfbb16a2ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _customerTransform: {fileID: 0}
+  _customerTransform: {fileID: 3355605291034956097}
+  _speechBubble: {fileID: 1646615744194663209}
   _customersController: {fileID: 0}
   _activeDurationEasy: 10
   _activeDurationMedium: 7

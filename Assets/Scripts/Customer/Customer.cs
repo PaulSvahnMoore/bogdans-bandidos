@@ -1,10 +1,13 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Customer : MonoBehaviour
 {
     [SerializeField] private Transform _customerTransform;
+    [SerializeField] private GameObject _speechBubble;
     [SerializeField] private Customers _customersController;
     [SerializeField] private float _activeDurationEasy = 10f;
     [SerializeField] private float _activeDurationMedium = 7f;
@@ -15,10 +18,14 @@ public class Customer : MonoBehaviour
     private float _activeTimer = 0f;
     private float _inactiveTimer = 0f;
     private float _activeDuration; // how long time a customer is active in one turn
+    private List<Material> _beerTypes = new List<Material>();
+    private MeshRenderer _speechBubbleMeshRenderer;
 
     private void Start()
     {
         _activeDuration = _activeDurationEasy;
+        _beerTypes = _customersController.beerTypes;
+        _speechBubbleMeshRenderer = _speechBubble.GetComponent<MeshRenderer>();
     }
 
     private void Update()
@@ -51,17 +58,6 @@ public class Customer : MonoBehaviour
         }
     }
 
-    private void ShowCustomer()
-    {
-        _customerTransform.eulerAngles -= new Vector3(0f, 0f, 90f);
-    }
-
-    private void HideCustomer()
-    {
-        _customerTransform.eulerAngles += new Vector3(0f, 0f, 90f);
-    }
-
-
     private void SetCustomerDifficulty(GameDifficulty gameDifficulty)
     {
         switch (gameDifficulty)
@@ -79,4 +75,23 @@ public class Customer : MonoBehaviour
                 break;
         }
     }
+    
+    private void ShowCustomer()
+    {
+        GetRandomBeerType();
+        _customerTransform.eulerAngles -= new Vector3(0f, 0f, 90f);
+    }
+
+    private void HideCustomer()
+    {
+        _customerTransform.eulerAngles += new Vector3(0f, 0f, 90f);
+    }
+
+    private void GetRandomBeerType()
+    {
+        int randomBeerIndex = Random.Range(0, _beerTypes.Count);
+        Debug.Log("randomBeerIndex: " + randomBeerIndex);
+        _speechBubbleMeshRenderer.material = _beerTypes[randomBeerIndex];
+    }
+
 }

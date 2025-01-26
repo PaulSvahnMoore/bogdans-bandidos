@@ -12,12 +12,14 @@ public class Customers : MonoBehaviour
 {
     public float gameDuration { private get; set; } // to set game duration from game manager or some sort
     public GameDifficulty gameDifficulty { get; private set; }
+
+    public List<Material> beerTypes;
     
     private float _timer;
     
     void Start()
     {
-        if (gameDuration == 0) { gameDuration = 10f; }
+        if (gameDuration == 0) { gameDuration = 60f; } // default game duration 60 seconds
     }
 
     // Update is called once per frame
