@@ -271,6 +271,7 @@ Transform:
   - {fileID: 7035057597191100519}
   - {fileID: 3956567473182926094}
   - {fileID: 6565492130550551576}
+  - {fileID: 1594922749734459605}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6362468001585959264
@@ -287,11 +288,81 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vfx: {fileID: 733114013357771727}
   sfxPlayer: {fileID: 0}
-  startSfx: {fileID: 0}
+  startSfx: {fileID: 8300000, guid: 0d3b59b0b75b1ba47b7f0831513a4357, type: 3}
   endSfx: {fileID: 0}
-  vfxDelay: 1
+  vfxDelay: 0
   beerType: 1
   beerTypeText: {fileID: 1485655951527614430}
+--- !u!1001 &1272535961961627454
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8877654553996811575}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5609851
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.43046188
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5609832
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.43046048
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 285
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8ea6ff002a3c4554a8a37d379761298b, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 833b760b334ec3d47900729b7589300a, type: 2}
+    - target: {fileID: 919132149155446097, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+      propertyPath: m_Name
+      value: Coaster
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+--- !u!4 &1594922749734459605 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 768ab15ed24f48a4b808828fa3e5ea9a, type: 3}
+  m_PrefabInstance: {fileID: 1272535961961627454}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2275324890298725996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -300,21 +371,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8877654553996811575}
     m_Modifications:
+    - target: {fileID: 1566998275667606947, guid: e141d9a57b42abc4193aa2fea0518626, type: 3}
+      propertyPath: lengthInSec
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566998275667606947, guid: e141d9a57b42abc4193aa2fea0518626, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566998275667606947, guid: e141d9a57b42abc4193aa2fea0518626, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.09
+      objectReference: {fileID: 0}
     - target: {fileID: 6179895643496317910, guid: e141d9a57b42abc4193aa2fea0518626, type: 3}
       propertyPath: m_Name
       value: BeerPouringVFX
       objectReference: {fileID: 0}
     - target: {fileID: 9093357478810299915, guid: e141d9a57b42abc4193aa2fea0518626, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093357478810299915, guid: e141d9a57b42abc4193aa2fea0518626, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093357478810299915, guid: e141d9a57b42abc4193aa2fea0518626, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.183
+      value: -0.21249999
       objectReference: {fileID: 0}
     - target: {fileID: 9093357478810299915, guid: e141d9a57b42abc4193aa2fea0518626, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.149
+      value: 0.2025
       objectReference: {fileID: 0}
     - target: {fileID: 9093357478810299915, guid: e141d9a57b42abc4193aa2fea0518626, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.024
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9093357478810299915, guid: e141d9a57b42abc4193aa2fea0518626, type: 3}
       propertyPath: m_LocalRotation.w
@@ -419,6 +510,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7263502824598102961, guid: 27618d452bb654e6aa8113152df98f33, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8ea6ff002a3c4554a8a37d379761298b, type: 2}
     - target: {fileID: 919132149155446097, guid: 27618d452bb654e6aa8113152df98f33, type: 3}
       propertyPath: m_Name
       value: Beer_tap1
