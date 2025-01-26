@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7175358841933831751}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.70917857, z: -0, w: 0.705029}
+  m_LocalRotation: {x: 0, y: -0.709177, z: 0, w: 0.7050305}
   m_LocalPosition: {x: -0.069, y: 0.8, z: 0.756}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -111,7 +111,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3854547295030983534}
   serializedVersion: 4
-  m_Mass: 100
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -191,11 +191,19 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5853340224552365985, guid: ab30bf25a21d83e459a134ddfb67f59c, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5853340224552365985, guid: ab30bf25a21d83e459a134ddfb67f59c, type: 3}
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7829168411308441314, guid: ab30bf25a21d83e459a134ddfb67f59c, type: 3}
       propertyPath: m_MassScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829168411308441314, guid: ab30bf25a21d83e459a134ddfb67f59c, type: 3}
+      propertyPath: m_UseSpring
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7829168411308441314, guid: ab30bf25a21d83e459a134ddfb67f59c, type: 3}
@@ -207,12 +215,28 @@ PrefabInstance:
       value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 7829168411308441314, guid: ab30bf25a21d83e459a134ddfb67f59c, type: 3}
+      propertyPath: m_Spring.damper
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829168411308441314, guid: ab30bf25a21d83e459a134ddfb67f59c, type: 3}
+      propertyPath: m_Spring.spring
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829168411308441314, guid: ab30bf25a21d83e459a134ddfb67f59c, type: 3}
       propertyPath: m_ConnectedMassScale
-      value: 0.01
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829168411308441314, guid: ab30bf25a21d83e459a134ddfb67f59c, type: 3}
+      propertyPath: m_AutoConfigureConnectedAnchor
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8511127825761852942, guid: ab30bf25a21d83e459a134ddfb67f59c, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8511127825761852942, guid: ab30bf25a21d83e459a134ddfb67f59c, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8511127825761852942, guid: ab30bf25a21d83e459a134ddfb67f59c, type: 3}
       propertyPath: m_Constraints
