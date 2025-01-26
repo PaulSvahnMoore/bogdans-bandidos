@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MAT_Beer
+  m_Name: BeerMaterial
   m_Shader: {fileID: -6465566751694194690, guid: 02f2cf6ba78b5244b8cfb774191a9608, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -38,14 +38,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Liquid: 0.788
+    - _Liquid: 0.34
     - _QueueControl: 0
     - _QueueOffset: -18
     - _WobbleX: 0
     - _WobbleZ: 0
     m_Colors:
-    - _SideColor: {r: 1, g: 0.8279877, b: 0, a: 1}
-    - _TopColor: {r: 1, g: 0.9880688, b: 0.9292453, a: 0.39215687}
+    - _SideColor: {r: 1, g: 0.91588044, b: 0.495283, a: 1}
+    - _TopColor: {r: 1, g: 0.827451, b: 0, a: 0.39215687}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &968127116170037107
